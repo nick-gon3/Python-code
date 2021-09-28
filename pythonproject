@@ -6,3 +6,11 @@ LOCAL_FILE = 'local_copy.log'
 # Use urlretrieve() to fetch a remote copy and save into the local file path
 local_file: str
 local_file, headers = urlretrieve(URL_PATH, LOCAL_FILE)
+# Use open() to get a filehandle that can access the file
+fh = open(local_file)
+#this piece should open and count the lines in the file
+count = len(open(local_file).readlines(  ))
+#this gives a quote to tell you that this is the overall amount for the overall time period
+print('Total request made represented by the log:')
+#print is a variable, the amount of lines in the log file and thus we print it to show it
+print(count)
