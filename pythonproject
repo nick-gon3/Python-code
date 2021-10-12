@@ -20,3 +20,4 @@ months = ["May","Jun", "Jul", "Aug", "Sep", "Oct"]
 #an attempt to implement the regex code that we discussed in previous week class to the code
 with open(local_file) as fp: request = fp.read().splitlines()
 DM = re.findall(\[(\d{2})/([A-Za-z]{3,4})/(\d{4}):(\d{2}:\d{2}:\d{2}).+\]\([A-Z]{3,6}) (.+) HTTP/1.0\(\d{3}) .*)
+#not 100% sure how to implement the rest of the code, help would be needed
