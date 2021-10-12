@@ -17,3 +17,6 @@ print('Total request made represented by the log:')
 print(count)
 #an attempt to count the months by just adding a variable called months that consist of 6 consecutive months
 months = ["May","Jun", "Jul", "Aug", "Sep", "Oct"]
+#an attempt to implement the regex code that we discussed in previous week class to the code
+with open(local_file) as fp: request = fp.read().splitlines()
+DM = re.findall(\[(\d{2})/([A-Za-z]{3,4})/(\d{4}):(\d{2}:\d{2}:\d{2}).+\]\([A-Z]{3,6}) (.+) HTTP/1.0\(\d{3}) .*)
