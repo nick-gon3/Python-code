@@ -14,3 +14,5 @@ count = len(open(local_file).readlines(  ))
 print('Total request made represented by the log:')
 #print is a variable, the amount of lines in the log file and thus we print it to show it
 print(count)
+#an attempt to count the months by just adding a variable called months that consist of 6 consecutive months
+months = ["May","Jun", "Jul", "Aug", "Sep", "Oct"]
